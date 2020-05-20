@@ -16,9 +16,9 @@ module.exports = {
         for ( p of products ) {
             
             let product = {
-                price: p.pmc,
                 ean: p.barra,
-                quantity: p.quantidade
+                preco: p.pmc,
+                estoque: p.quantidade
             }
 
             if ( await discountIsValid(p) ) {
