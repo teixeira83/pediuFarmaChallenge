@@ -29,7 +29,7 @@ module.exports = {
 
             productsWithDiscounts.push(product);
         }
-        return response.json(productsWithDiscounts);
+        return response.status(200).send(response.json(productsWithDiscounts));
     }
 }
 
